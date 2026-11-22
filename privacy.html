@@ -29,10 +29,10 @@
 <body>
 <main>
   <h1><span>Brillion</span> Privacy Policy</h1>
-  <div class="meta">Effective November 21, 2026</div>
+  <div class="meta">Effective November 21, 2026 · Updated November 21, 2026 (friends, usernames, notifications)</div>
 
   <div class="box">
-    <strong>The short version.</strong> Brillion is a trivia game. We keep what's needed to run it: an account ID, the answers you play and your scores. We don't ask for your name or email, we don't show ads, and we don't sell or share your data for advertising. Answers you type are checked by an AI service. You can delete your account and its data at any time in the app.
+    <strong>The short version.</strong> Brillion is a trivia game. We keep what's needed to run it: an account ID, the answers you play and your scores, and, if you use Friends, a username you choose. We don't ask for your real name or email, we don't show ads, and we don't sell or share your data for advertising. Answers you type are checked by an AI service. You can delete your account and its data at any time in the app.
   </div>
 
   <h2>Who we are</h2>
@@ -44,6 +44,8 @@
     <tr><th>Data</th><th>Why</th></tr>
     <tr><td><strong>An account ID.</strong> The app creates an anonymous account the first time you play. If you choose Sign in with Apple, we also store the identifier Apple gives us for your Apple ID. We don't request your name or email from Apple.</td><td>To keep your streak, dives, Pro status and topics across sessions and devices.</td></tr>
     <tr><td><strong>Gameplay.</strong> The answers and guesses you type, when you answered, your scores and tiers, which prompts you've seen, duels you start or join, and any answers you report as wrongly rejected.</td><td>To score your answers, work out how rare each answer is across all players, show your results and stats, and improve answer checking.</td></tr>
+    <tr><td><strong>Username and friends.</strong> If you use Friends: the username you pick, your friend code, your friends, friend requests, players you block, and usernames you report.</td><td>To show you and your friends on each other's leaderboards and duels, and to keep the community safe.</td></tr>
+    <tr><td><strong>Notification token.</strong> If you turn on notifications, a push token for your device (from Apple, through Expo's push service).</td><td>To send the daily reminder you asked for and friend alerts (requests, duels, scores). Turn them off any time in iPhone Settings.</td></tr>
     <tr><td><strong>Custom topics.</strong> Topics you type and the prompt packs created for you.</td><td>To build and replay your topic dives.</td></tr>
     <tr><td><strong>Subscription status.</strong> Whether you have Brillion Pro and when it renews or ends. Apple handles payment; we never see your card or payment details.</td><td>To unlock Pro features.</td></tr>
     <tr><td><strong>Technical data.</strong> Our hosting providers keep standard server logs, which include IP addresses and request times.</td><td>To keep the service running, secure and free of abuse.</td></tr>
@@ -57,6 +59,8 @@
     <li>Everyone sees how common answers are (for example "12% of divers said Penguin"), counted across all players without names.</li>
     <li>In a duel, you and the friend you duel see each other's accepted answers and scores, after both of you have played.</li>
     <li>Your custom topic packs are private. Only you, and a friend you duel, can play them.</li>
+    <li>Your friends see your username, your daily score and tiers (only after they've played that day themselves), whether you found a Brillionaire, your weekly total and your streak. People who aren't your friends see none of this.</li>
+    <li>Your username is shown to players you send a friend request or duel to. You can block a player at any time: blocked players can't see you, request you or duel you. You can also report a username; we review reports and remove names that break our rules.</li>
   </ul>
 
   <h2>Service providers</h2>
@@ -64,6 +68,7 @@
   <ul>
     <li><strong>Supabase</strong> hosts our database, accounts and server functions (United States).</li>
     <li><strong>OpenAI</strong> checks whether answers fit a prompt, writes prompts and answer lists, and screens custom topics for harmful content. We send the prompt, its rules and the answer or topic you typed, never your account ID. Under OpenAI's API terms, this data isn't used to train their models.</li>
+    <li><strong>Expo</strong> (650 Industries) relays push notifications to Apple. It receives your device's push token and the notification text.</li>
     <li><strong>RevenueCat</strong> manages subscriptions. It receives your Brillion account ID and your App Store purchase records.</li>
     <li><strong>Apple</strong> provides Sign in with Apple and App Store payments, under <a href="https://www.apple.com/legal/privacy/">Apple's privacy policy</a>.</li>
   </ul>
@@ -79,7 +84,7 @@
 
   <h2>Your choices and rights</h2>
   <ul>
-    <li><strong>Delete your account</strong> in the app: Me → Settings → Delete account. This permanently deletes your account, plays, answers, topic packs and Pro record. If you subscribe, also cancel in your App Store settings, since Apple manages billing.</li>
+    <li><strong>Delete your account</strong> in the app: Me → Settings → Delete account. This permanently deletes your account, plays, answers, topic packs, username, friends, requests, blocks, notification tokens and Pro record. If you subscribe, also cancel in your App Store settings, since Apple manages billing.</li>
     <li><strong>Access or correct</strong> your data, or ask any privacy question, by emailing <a href="mailto:itsmeethankim@icloud.com">itsmeethankim@icloud.com</a>. Depending on where you live (for example the EU, UK or California), you may have additional rights, such as data portability or objecting to processing; we honor these requests.</li>
     <li>You can play without signing in. Sign in with Apple is optional.</li>
   </ul>
