@@ -29,7 +29,7 @@
 <body>
 <main>
   <h1><span>Brillion</span> Privacy Policy</h1>
-  <div class="meta">Effective November 21, 2026 · Updated November 22, 2026 (contact email, AI providers and consent)</div>
+  <div class="meta">Effective November 21, 2026 · Updated November 22, 2026 (analytics and crash reporting, contact email, AI providers and consent)</div>
 
   <div class="box">
     <strong>The short version.</strong> Brillion is a trivia game. We keep what's needed to run it: an account ID, the answers you play and your scores, and, if you use Friends, a username you choose. We don't ask for your real name or email, we don't show ads, and we don't sell or share your data for advertising. Answers you type are checked by an AI service. You can delete your account and its data at any time in the app.
@@ -48,11 +48,12 @@
     <tr><td><strong>Notification token.</strong> If you turn on notifications, a push token for your device (from Apple, through Expo's push service).</td><td>To send the daily reminder you asked for and friend alerts (requests, duels, scores). Turn them off any time in iPhone Settings.</td></tr>
     <tr><td><strong>Custom topics.</strong> Topics you type and the prompt packs created for you.</td><td>To build and replay your topic dives.</td></tr>
     <tr><td><strong>Subscription status.</strong> Whether you have Brillion Pro and when it renews or ends. Apple handles payment; we never see your card or payment details.</td><td>To unlock Pro features.</td></tr>
+    <tr><td><strong>App usage and diagnostics.</strong> Which screens and features you use (for example "finished a dive", "opened the paywall", "sent a duel"), scores and tiers, and crash and error reports with your device model, iOS version and app version. Linked to your account ID. Never the answers you type, your username or your topics.</td><td>To find where the app is confusing or broken, fix crashes, and decide what to improve. You can turn off usage analytics in Settings; crash reports stay on so we can fix problems.</td></tr>
     <tr><td><strong>Technical data.</strong> Our hosting providers keep standard server logs, which include IP addresses and request times.</td><td>To keep the service running, secure and free of abuse.</td></tr>
     <tr><td><strong>On your device.</strong> Your settings (sound, haptics), today's result and your sign-in session are stored on your phone or browser.</td><td>So the app works quickly and remembers you.</td></tr>
   </table>
   </div>
-  <p>We don't collect your contacts, location, photos or advertising identifiers, and the app contains no advertising or third-party analytics SDKs.</p>
+  <p>We don't collect your contacts, location, photos or advertising identifiers, and the app contains no advertising SDKs. We don't track you across other companies' apps or websites.</p>
 
   <h2>What other players see</h2>
   <ul>
@@ -69,7 +70,9 @@
     <li><strong>Supabase</strong> hosts our database, accounts and server functions (United States).</li>
     <li><strong>OpenAI</strong> checks whether answers fit a prompt, writes prompts and answer lists, and screens custom topics for harmful content. We send the prompt, its rules and the answer or topic you typed, never your account ID. Under OpenAI's API terms, this data isn't used to train their models. If OpenAI is unavailable, <strong>Anthropic</strong> (Claude) may do the same answer checks on the same terms. The app asks for your OK before the first time anything you type is sent.</li>
     <li><strong>Expo</strong> (650 Industries) relays push notifications to Apple. It receives your device's push token and the notification text.</li>
-    <li><strong>RevenueCat</strong> manages subscriptions. It receives your Brillion account ID and your App Store purchase records.</li>
+    <li><strong>RevenueCat</strong> manages subscriptions. It receives your Brillion account ID and your App Store purchase records, and sends subscription events (such as a trial starting) to PostHog.</li>
+    <li><strong>PostHog</strong> (United States) provides product analytics. It receives the usage events described above with your account ID. It's set to discard IP addresses, location lookup is off, and screen recording is off.</li>
+    <li><strong>Sentry</strong> (United States) provides crash and error reporting. It receives crash and error reports with your account ID, device model, iOS version and app version. It's set not to store IP addresses.</li>
     <li><strong>Apple</strong> provides Sign in with Apple and App Store payments, under <a href="https://www.apple.com/legal/privacy/">Apple's privacy policy</a>.</li>
   </ul>
   <p>We don't sell your personal data, and we don't share it with advertisers or data brokers. We may disclose data if required by law, or to protect the safety of our players and service.</p>
@@ -79,6 +82,7 @@
     <li>Your account and gameplay are kept until you delete your account.</li>
     <li>Custom topic packs that nobody has played for 90 days are deleted automatically.</li>
     <li>Server logs are kept only as long as our providers need them for security and operations.</li>
+    <li>Usage analytics are kept for up to 1 year, and crash reports for up to 90 days. When you delete your account, its analytics events can no longer be connected to you in our systems; email us to have them deleted sooner.</li>
     <li>Aggregate answer counts (how many players gave an answer) don't identify anyone and may be kept after an account is deleted.</li>
   </ul>
 
